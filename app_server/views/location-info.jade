@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Lorem ipsum
+  .row
+    .col-xs-12.ol-md-9
+      .col-xs-12.col-sm-6
+        p.rating
+          span.glyphicon.glyphicon-star
+          span.glyphicon.glyphicon-star
+          span.glyphicon.glyphicon-star
+          span.glyphicon.glyphicon-star-empty
+          span.glyphicon.glyphicon-star-empty
+        p 987 Lookout Mountain Rd, Golden, CO 80401
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Business Hours
+            .panel-body
+              p Monday - Friday  7am - 7pm
+              p Saturday  8am - 5pm
+              p Sunday  Closed
+          panel.panel-primary
+            .panel-heading
+              h2.panel-title Facilities
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                  &nbsp;Premium WiFi
+                &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                  &nbsp;Food
+                &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                  &nbsp;Coffee
+                &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                  &nbsp;Goat Milk
+                &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              img.img-responsive.img-rounded(src='http://maps.googleleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+              
