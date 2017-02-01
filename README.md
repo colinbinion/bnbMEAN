@@ -7,3 +7,5 @@ nodemon
 Jade = indentation a big deal in templates = ex. <div>
 
 double check mobile views and web views
+
+maps need fixing
