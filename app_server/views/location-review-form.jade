@@ -1,15 +1,15 @@
-extends layout
+xtends layout
 
 block content
   .row.page-header
     .col-lg-12
-      h1 Review Lorem ipsum
+      h1= pageHeader.title
   .row
     .col-xs-12.col-md-6
       form.form-horizontal(action="/location", method="get", role="form")
         .form-group
           label.col-xs-10.col-sm-2.control-label(for="name") Name
-          .col-sm-12.col-sm-10
+          .col-xs-12.col-sm-10
             input#name.form-control(name="name")
         .form-group
           label.col-xs-10.col-sm-2.control-label(for="rating") Rating
@@ -24,5 +24,5 @@ block content
           label.col-sm-2.control-label(for="review") Review
           .col-sm-10
             textarea#review.form-control(name="review", rows="5")
-        button.btn.btn-default.pull-right Add your review
+        button.btn.btn-default.pull-right Add my review
     .col-xs-12.col-md-4
