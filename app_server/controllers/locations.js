@@ -6,7 +6,7 @@ module.exports.homelist = function(req, res) {
             title: 'Loc8r',
             strapline: 'Find places to work with wifi near you!'
         },
-        sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
+        sidebar: "Loc8r finds WiFi workspaces for you, wherever you are.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.  Praesent libero.",
         locations: [{
             name: 'Lorem ipsum',
             address: '987 Lookout Mountain Rd, Golden, CO 80401',

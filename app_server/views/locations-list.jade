@@ -1,5 +1,7 @@
 extends layout
 
+include _includes/sharedHTMLfunctions
+
 block content
   #banner.page-header
     .row
@@ -14,11 +16,7 @@ block content
           h4
             a(href='/location')= location.name
             small &nbsp;
-              span.glyphicon.glyphicon-star
-              span.glyphicon.glyphicon-star
-              span.glyphicon.glyphicon-star
-              span.glyphicon.glyphicon-star-empty
-              span.glyphicon.glyphicon-star-empty
+              +outputRating(location.rating)
             span.badge.pull-right.badge-default= location.distance
           p.address= location.address
           p
@@ -26,4 +24,4 @@ block content
               span.label.label-warning= facility
               &nbsp;
     .col-xs-12.col-sm-4
-      p.lead Loc8r finds WiFi workspaces for you, wherever you are.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.  Praesent libero.
+      p.lead= sidebar
