@@ -9,25 +9,21 @@ block content
   .row
     .col-xs-12.col-sm-8
       .row.list-group
+      each location in locations
         .col-xs-12.list-group-item
           h4
-            a(href='/location') Lorem ipsum
+            a(href='/location')= location.name
             small &nbsp;
               span.glyphicon.glyphicon-star
               span.glyphicon.glyphicon-star
               span.glyphicon.glyphicon-star
               span.glyphicon.glyphicon-star-empty
               span.glyphicon.glyphicon-star-empty
-            span.badge.pull-right.badge-default 100 ft
-          p.address 987 Lookout Mountain Rd, Golden, CO 80401
+            span.badge.pull-right.badge-default= location.distance
+          p.address= location.address
           p
-            span.label.label-warning Premium WiFi
-              &nbsp;
-            span.label.label-warning Food
-              &nbsp;
-            span.label.label-warning Coffee
-              &nbsp;
-            span.label.label-warning Goat Milk
+            each facility in location.facilities
+              span.label.label-warning= facility
               &nbsp;
     .col-xs-12.col-sm-4
       p.lead Loc8r finds WiFi workspaces for you, wherever you are.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.  Praesent libero.

@@ -11,7 +11,7 @@ module.exports.homelist = function(req, res) {
             name: 'Lorem ipsum',
             address: '987 Lookout Mountain Rd, Golden, CO 80401',
             rating: 3,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+            facilities: ['Hot drinks', 'Food', 'Premium wifi', 'Goat milk'],
             distance: '100m'
         }, {
             name: 'Lorem ipsum2',
